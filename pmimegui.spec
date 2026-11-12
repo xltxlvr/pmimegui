@@ -32,7 +32,7 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['pmimegui.icns'],
+    icon=['pmimegui.png'],
 )
 coll = COLLECT(
     exe,
@@ -46,6 +46,6 @@ coll = COLLECT(
 app = BUNDLE(
     coll,
     name='pm IME GUI.app',
-    icon='pmimegui.icns',
+    icon='pmimegui.ico',  # icns for macOS
     bundle_identifier=None,
 )
